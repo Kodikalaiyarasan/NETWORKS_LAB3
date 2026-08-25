@@ -1,0 +1,51 @@
+Windows Network Commands
+
+ipconfig: Displays current TCP/IP network configuration values (IP address, subnet mask, default gateway). Use ipconfig /all for detailed adapter info, or /flushdns to clear the DNS cache.
+
+ping: Tests Layer 3 reachability to a remote host using ICMP Echo Requests (e.g., ping google.com).
+
+tracert: Traces the route packets take to a destination, displaying each intermediate hop and round-trip time.
+
+pathping: Combines ping and tracert functionality, calculating packet loss per hop over time.
+
+netstat: Displays active TCP connections, listening ports, and Ethernet statistics (e.g., netstat -ano).
+
+nslookup: Queries DNS servers to resolve hostnames to IP addresses or inspect DNS records.
+
+arp: Displays and modifies the Address Resolution Protocol cache mapping IP addresses to physical MAC addresses (e.g., arp -a).
+
+route: Views and manages the local IP routing table (e.g., route print, route add).
+
+netsh: Comprehensive command-line scripting utility to configure network interfaces, firewall rules, and Wi-Fi profiles.
+
+Get-NetIPAddress / Test-NetConnection (PowerShell): Modern PowerShell cmdlets for querying IP configurations and testing specific port connectivity (e.g., Test-NetConnection host -Port 80).
+
+Linux Network Commands
+
+ip: The modern replacement for ifconfig and route (from iproute2).
+
+ip addr show: Lists IP addresses on interfaces.
+
+ip route: Displays and modifies the routing table.
+
+ip link: Manages interface states (e.g., ip link set eth0 up).
+
+ifconfig: Legacy tool from net-tools used to view or configure network interface parameters.
+
+ping: Sends continuous ICMP Echo Requests to verify host reachability (stop with Ctrl+C or limit with -c <count>).
+
+traceroute / tracepath: Traces the network path to a remote host using UDP, ICMP, or TCP probes.
+
+ss: Modern socket statistics utility that replaces netstat to view listening ports and active sockets (e.g., ss -tulpn).
+
+dig / host: Powerful DNS lookup and diagnostic tools (e.g., dig example.com ANY or host example.com).
+
+arp / ip neigh: Views and edits the local ARP table (ip neigh show is the modern standard).
+
+nmcli / nmtui: Command-line and terminal UI tools for controlling NetworkManager settings and connections.
+
+curl / wget: Network transfer utilities used for fetching web content, testing REST APIs, and verifying HTTP/S endpoints.
+
+tcpdump: Command-line packet analyzer for capturing and inspecting raw network traffic on interfaces.
+
+nc (netcat): The "Swiss army knife" for debugging TCP/UDP connections, port scanning, and banner grabbing.
